@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link
+		href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial"
+		rel="stylesheet" />
+	<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">中原資管</a></h1>
+				<meta name="twitter:card" content="" />
+
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html" accesskey="1" title="">首頁</a></li>
+					<li><a href="關於資管.html" accesskey="2" title="">關於資管</a></li>
+					<li><a href="傑出校友.html" accesskey="3" title="">傑出校友</a></li>
+					<li class="active"><a href="傑出成果.html" accesskey="4" title="">傑出成果</a></li>
+					<li><a href="系上活動.html" accesskey="5" title="">系上活動</a></li>
+					<li><a href="關於我們.html" accesskey="6" title="">關於我們</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+
+		<div id="welcome" class="container">
+			<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h5>在各個競賽拿下佳績</h5>
+						<br></br>
+						<div>
+							<div>
+								<img class="mySlides w3-animate-top" src="成就/1.png" style="width:100%">
+								<img class="mySlides w3-animate-bottom" src="成就/2.jpg" style="width:100%">
+								<img class="mySlides w3-animate-bottom" src="成就/3.jpg" style="width:100%">
+								<img class="mySlides w3-animate-bottom" src="成就/4.jpg" style="width:100%">
+								<img class="mySlides w3-animate-bottom" src="成就/5.jpg" style="width:100%">
+								<img class="mySlides w3-animate-bottom" src="成就/6.jpg" style="width:100%">
+							</div>
+						</div>
+					</header>
+			</section>
+		</div>
+		<div>
+			<marquee direction="right" height="400" scro;;amount="10" behavior="alternate">
+				<img src="picturer_running/中原大學「以愛為核心」 連續三度榮獲教育部「友善校園獎」卓越學校.png" width="600px" height="400px">
+				<img src="picturer_running/專業+品格 中原大學連續三年勇奪「企業最愛大學」第一名！.png" width="600px" height="400px">
+				<img src="picturer_running/愛是教育的主導力量！中原大學推動大學社會責任深獲肯定.png" width="600px" height="400px">
+				<img src="picturer_running/知行領航館新建工程榮獲「鑽石級」綠建築標章 最優等級環保規格！.png" width="600px" height="400px">
+				<img src="picturer_running/中原大學註冊率、企業最愛全國第一 全人教育深獲認同.png" width="600px" height="400px">
+			</marquee>
+		</div>
+	</div>
+
+	<div id="copyright">
+		<h4>關於我們</h4>
+		<br></br>
+		<ul class="contact">
+			<li><a href="https://www.instagram.com/cycuim/" class="icon icon-instagram"><span>Instergram</span></a></li>
+			<li><a href="https://www.facebook.com/groups/196334640403577/" class="icon icon-facebook"><span></span></a></li>
+			<li><a href="https://www.youtube.com/channel/UCLR0fIUYjMjN_8sNXe48P8A"
+					class="icon icon-youtube"><span>Youtube</span></a></li>
+			<li><a href="https://www.flickr.com/photos/127943878@N08/albums"
+					class="icon icon-flickr"><span>Flickers</span></a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {
+				myIndex = 1
+			}
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+	</script>
+</body>
+
+</html>
